@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="weather-card">
+
+    <h2 class="text-center mb-4">🌤 Weather App</h2>
+
+    <div class="input-group mb-3">
+        <input
+            type="text"
+            id="cityInput"
+            class="form-control"
+            placeholder="Enter City Name"
+        >
+
+        <button
+            class="btn btn-primary"
+            onclick="getWeatherData()">
+            Search
+        </button>
+    </div>
+
+    <div id="loader" class="text-center d-none">
+        <div class="spinner-border text-light"></div>
+    </div>
+
+    <div id="dataResult"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
